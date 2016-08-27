@@ -1,0 +1,164 @@
+$color:green;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+$sideBarColor:#383435;
+$iconMeunHoverColor:#9b9b9b;
+//This is the area for sideBar
+.test{
+   color:$color;
+    font-weight: bold;
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 300px;
+    @include border-radius(25px);
+}
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+.clearfix::after,.clearfix::before{
+    clear:both;
+    content: '';
+}
+.menuBar{
+    float: left;
+    height:100vh;;
+    width:20%;
+    background-color: $sideBarColor;
+    
+}
+.composeArea{
+    height:20%;
+    text-align: center;
+    padding-top:30%;
+}
+.composeText{
+    margin-top:10px;
+     cursor:pointer;
+}
+.composeArea,.menuItem{
+    color:white;
+}
+
+.menuItem{
+    height:50px;
+    width:100%;
+    line-height:50px;
+    padding-left:30px;
+    cursor:pointer;
+    &.activeMenu{
+        background-color: #26120b;
+        &:hover{
+            background-color: #26120b;
+        }
+    }
+    &:hover{
+         background-color: $iconMeunHoverColor;
+    }
+}
+
+//this is the css for mail area..
+
+//This is for the uppermost menu bar
+.selectionArea{
+    margin-top:2.5%;
+    padding-bottom:3%;
+    border-bottom: 1px solid #bcbdbf;
+}
+.mailItem{
+    float: left;
+    height:100vh;
+    width:80%;
+    background-color: #eceff4;
+}
+
+.iconContainer{
+    background-color: white;
+    display: inline-block;
+    height:auto;
+    border-radius: 5px;
+    vertical-align: middle;
+    .iconFont{
+        display: inline-block;
+        font-size: 25px;
+        color:$iconMeunHoverColor;
+        height: 25px;
+        padding:5px 10px;
+        border-left:1px solid #9b9b9b;
+        &:first-child{
+            border-left:none;
+        }
+    }
+}
+.SortBySelector{;
+    @extend .iconContainer;
+     height: 35px;
+     padding:5px 10px;
+}
+#sortBy{
+    margin-left:10%;
+}
+#dropDown{
+    margin-left: 1%;
+}
+#cross{
+    margin-left: 30%;
+}
+#reply{
+    margin-left: 1%;
+}
+#star{
+    margin-left: 1%;
+    color:#fd3400;
+}
+#cross,#reply,#star{
+    cursor:pointer;    
+}
+
+
+.mailItemSelected{
+    background-color: #999;
+}
+
+// This is for the mail mail content
+.mail{
+    margin:2% 1%;
+    display:inline-block;
+    height:auto;
+   
+}
+.border{
+    margin-left:5%;
+    margin-right:5%;
+    border-bottom:1px solid #bcbdbf; 
+}
+.mailContentArea{
+    cursor: pointer;
+}
+.mailContent{
+    color:#bcbdbf;
+}
+.mailSubject{
+    color:#909193;
+}
+.mailMark{
+    float:left;
+    padding:2% 15px;
+    width:15px;
+}
+.h4{
+    float:left;
+}
+.blue{
+    color:#0098fd;
+}
+.default{
+    color:#eceff4;
+}
+

@@ -1,0 +1,76 @@
+data: {
+    inboxData:{
+    {
+        "mailer":"sujeet jaiswal in inbox",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content1 Thanks for joining creative cloud. this is a pleasure for me.",
+        "isRead":true,
+        "isBookmarked":true
+  },
+    {
+        "mailer":"Jimee Jain in inbox",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content2 Thanks for joining creative cloud. this is a pleasure for me",
+        "isRead":false,
+        "isBookmarked":true
+    },
+       {
+        "mailer":"sujeet jaiswal in inbox",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content3 Thanks for joining creative cloud. this is a pleasure for me",
+        "isRead":true,
+        "isBookmarked":true
+       },
+    {
+        "mailer":"sujeet jaiswal in inbox",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content4 Thanks for joining creative cloud. this is a pleasure for me" ,
+        "isRead":false,
+        "isBookmarked":true
+    },
+    {
+        "mailer":"Heading5 in inbox",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content5 Thanks for joining creative cloud. this is a pleasure for me",
+        "isRead":true,
+        "isBookmarked":true
+     
+},
+
+    draftData = {
+    {
+        "mailer":"sujeet jaiswal in drafts",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content1 Thanks for joining creative cloud. this is a pleasure for me.",
+        "isRead":true,
+        "isBookmarked":true
+  },
+    {
+        "mailer":"Jimee Jain in drafts",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content2 Thanks for joining creative cloud. this is a pleasure for me",
+        "isRead":false,
+        "isBookmarked":true
+    },
+       {
+        "mailer":"sujeet jaiswal in drafts",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content3 Thanks for joining creative cloud. this is a pleasure for me",
+        "isRead":true,
+        "isBookmarked":true
+       },
+    {
+        "mailer":"sujeet jaiswal in drafts",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content4 Thanks for joining creative cloud. this is a pleasure for me" ,
+        "isRead":false,
+        "isBookmarked":true
+    },
+    {
+        "mailer":"Heading5 in drafts",
+        "subject":"welcome to creative cloud, let us all get started....",
+        "content":"Here comes the content5 Thanks for joining creative cloud. this is a pleasure for me",
+        "isRead":true,
+        "isBookmarked":true
+    }
+};
