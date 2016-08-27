@@ -1,0 +1,137 @@
+.test {
+  color: green;
+  font-weight: bold;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width: 300px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+.clearfix::after, .clearfix::before {
+  clear: both;
+  content: ''; }
+
+.menuBar {
+  float: left;
+  height: 100vh;
+  width: 20%;
+  background-color: #383435; }
+
+.composeArea {
+  height: 20%;
+  text-align: center;
+  padding-top: 30%; }
+
+.composeText {
+  margin-top: 10px;
+  cursor: pointer; }
+
+.composeArea, .menuItem {
+  color: white; }
+
+.menuItem {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  padding-left: 30px;
+  cursor: pointer; }
+  .menuItem.activeMenu {
+    background-color: #26120b; }
+    .menuItem.activeMenu:hover {
+      background-color: #26120b; }
+  .menuItem:hover {
+    background-color: #9b9b9b; }
+
+.selectionArea {
+  margin-top: 2.5%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #bcbdbf; }
+
+.mailItem {
+  float: left;
+  height: 100vh;
+  width: 80%;
+  background-color: #eceff4; }
+
+.iconContainer, .SortBySelector {
+  background-color: white;
+  display: inline-block;
+  height: auto;
+  border-radius: 5px;
+  vertical-align: middle; }
+  .iconContainer .iconFont, .SortBySelector .iconFont {
+    display: inline-block;
+    font-size: 25px;
+    color: #9b9b9b;
+    height: 25px;
+    padding: 5px 10px;
+    border-left: 1px solid #9b9b9b; }
+    .iconContainer .iconFont:first-child, .SortBySelector .iconFont:first-child {
+      border-left: none; }
+
+.SortBySelector {
+  height: 35px;
+  padding: 5px 10px; }
+
+#sortBy {
+  margin-left: 10%; }
+
+#dropDown {
+  margin-left: 1%; }
+
+#cross {
+  margin-left: 30%; }
+
+#reply {
+  margin-left: 1%; }
+
+#star {
+  margin-left: 1%;
+  color: #fd3400; }
+
+#cross, #reply, #star {
+  cursor: pointer; }
+
+.mailItemSelected {
+  background-color: #999; }
+
+.mail {
+  margin: 2% 1%;
+  display: inline-block;
+  height: auto; }
+
+.border {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 1px solid #bcbdbf; }
+
+.mailContentArea {
+  cursor: pointer; }
+
+.mailContent {
+  color: #bcbdbf; }
+
+.mailSubject {
+  color: #909193; }
+
+.mailMark {
+  float: left;
+  padding: 2% 15px;
+  width: 15px; }
+
+.h4 {
+  float: left; }
+
+.blue {
+  color: #0098fd; }
+
+.default {
+  color: #eceff4; }

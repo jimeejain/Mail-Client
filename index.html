@@ -1,0 +1,71 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/src.css">
+</head>
+    
+    <body ng-app="mailApp" ng-controller="mainController">
+    <div class="container">
+        <div class="menuBar">
+            <div class="composeArea">
+                <div class="composeText"><i class="mega-octicon octicon-mail-read"></i></div>
+                <div class="composeText">compose</div>
+            </div>
+            <div class="menuItem" ng-click="openFolder(folderType.inbox);" ng-class="{true:'activeMenu'}[selectedMenu == folderType.inbox]">Inbox</div>
+            <div class="menuItem" ng-click="openFolder(folderType.draft);" ng-class="{true:'activeMenu'}[selectedMenu == folderType.draft]">Drafts</div>
+            <div class="menuItem" ng-click="openFolder(folderType.sent);" ng-class="{true:'activeMenu'}[selectedMenu == folderType.sent]">Sent</div>
+            <div class="menuItem" ng-click="openFolder(folderType.junk);" ng-class="{true:'activeMenu'}[selectedMenu == folderType.junk]">Junk</div>
+            <div class="menuItem" ng-click="openFolder(folderType.trash);" ng-class="{true:'activeMenu'}[selectedMenu == folderType.trash]">Trash</div>
+        </div>
+        <div class="mailItem">
+            <div class="selectionArea">
+                <span id="sortBy">Sort by:</span>
+                <select class="SortBySelector">
+                    <option value="date">Date</option> 
+                    <option value="from">from</option>
+                    <option value="to">To</option>
+                    <option value="subject">Subject</option>
+                 </select>
+                
+                <span class="iconContainer" id="cross">
+                    <i class="fa fa-times iconFont"></i>
+                </span>
+                <span class="iconContainer" id="reply">
+                    <i class="fa fa-reply iconFont"></i>
+                    <i class="fa fa-reply-all iconFont"></i>
+                    <i class="fa fa-arrow-right iconFont" ></i>
+                </span>
+                <span class="iconContainer" >
+                    <i class="fa fa-star iconFont" id="star" ng-click="starClicked()"></i>
+                </span>
+                        
+            </div>
+            <div class="mailContentArea">
+                <div ng-repeat="mail in displayData" ng-click="folderItemSelected($index)" ng-class="{true : 'mailItemSelected'}[$index == selectedFolderItem]">
+                <div class="mailMark">
+                    <i class="fa fa-circle" ng-show="mail.isRead==true" aria-hidden="true" ng-class="{true:'blue',false:'default'}[mail.isRead==true]"></i>
+                </div>
+                <div class="mail">
+                    <h4 > 
+                        <i ng-show="mail.isBookmarked" class="fa fa-star iconFont" id="star"></i>
+                        <span ng-bind="mail.mailer"></span>
+                        
+                        <span ng-bind="date"></span>
+                    </h4>
+                    <p ng-bind="mail.subject" class="mailSubject"></p>
+                    <p ng-bind="mail.content" class="mailContent"></p>
+                </div>
+                <div class="border"></div>
+                    
+                </div>
+            
+            </div>     
+        
+        
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+    <script src="./js/index.js"></script>
+    </body>
+</html>
